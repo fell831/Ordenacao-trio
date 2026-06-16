@@ -53,3 +53,13 @@ dkms.conf
 
 # debug information files
 *.dwo
+# ==========================================
+# Arquivos gerados pelo projeto (Compilação e Profiling)
+# ==========================================
+sort_main
+test_basic
+*.o
+*.gcda
+*.gcno
+*.gcov
+gmon.out
