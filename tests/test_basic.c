@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // 1. PROTÓTIPOS DAS FUNÇÕES (Básicos e Avançados)
+void bubble_sort(int vetor[], int tamanho);
 void insertion_sort(int vetor[], int tamanho);
 void selection_sort(int vetor[], int tamanho);
 void merge_sort(int vetor[], int esquerdo, int direito);
@@ -16,10 +17,25 @@ void imprimir_vetor(int vetor[], int tamanho) {
 }
 
 // 2. PONTO DE ENTRADA ÚNICO
+
 int main() {
     printf("=========================================\n");
     printf("   EXECUTANDO CENARIOS DE TESTE LOCAIS   \n");
     printf("=========================================\n\n");
+
+    // Dentro da main do seu tests/test_basic.c, certifique-se de ter:
+int vetor_bubble[] = {12, 5, 3, 1, 8, 7};
+int tamanho_bubble = sizeof(vetor_bubble) / sizeof(vetor_bubble[0]);
+
+printf("[Bubble Sort] Antes : ");
+imprimir_vetor(vetor_bubble, tamanho_bubble);
+
+bubble_sort(vetor_bubble, tamanho_bubble); // Chamada crucial para o gcov rastrear!
+
+printf("[Bubble Sort] Depois: ");
+imprimir_vetor(vetor_bubble, tamanho_bubble);
+printf("-----------------------------------------\n");
+
 
     // --- TESTE DO INSERTION SORT (Básico) ---
     int vetor_ins[] = {15, 3, 9, 1, 22, 8};
