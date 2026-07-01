@@ -13,7 +13,7 @@ A árvore do projeto segue rigorosamente a padronização e modularização exig
     * `bubble.c` ($O(n^2)$)
     * `insertion.c` ($O(n^2)$)
     * `selection.c` ($O(n^2)$)
-* **`src/avancados/`**: Contem as lógicas de divisão, conquista e árvore de prioridades:
+* **`src/avancados/`**: Contém as lógicas de divisão, conquista e árvore de prioridades:
     * `merge.c` ($O(n \log n)$)
     * `quick.c` ($O(n \log n)$)
     * `heap.c` ($O(n \log n)$)
